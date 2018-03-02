@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [Оля Иванова](https://up.htmlacademy.ru/htmlcss/20/user/130963).
+* Студент: [Оля Мельчакова](https://up.htmlacademy.ru/htmlcss/20/user/130963).
 * Наставник: [Максим Лыков](https://htmlacademy.ru/profile/id529621).
 
 ---
