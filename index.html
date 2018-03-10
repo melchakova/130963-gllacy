@@ -5,52 +5,54 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-  	
+
   	<header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-header-logo">
-  				<!-- вместо а использовать div или span-->
   				<img src="http://placehold.it/154x64" width="154" height="64" alt="Логотип магазина «Глейси»">
   			</a>
   			<ul class="site-navigation">
-  				<li><a href="catalog.html">Каталог</a></li>
-  				<li><a href="delivery.html">Доставка и оплата</a></li>
-  				<li><a href="about.html">О компании</a></li>
+  				<li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
+  				<li class="site-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
+  				<li class="site-navigation-item"><a href="about.html">О компании</a></li>
   			</ul>
   			<div class="user-navigation">
-  				<div class="search-link"><a href="#"></a></div>
-  				<div class="login-link"><a href="#">Вход</a></div>
-  				<div class="cart-link"><a href="#">Пусто</a></div>
-  				<!-- здесь группа элементов, не особо связанных м/у собой, оправдан ли тут div вместо ul>li? -->
-  				<!-- что лучше использовать а или button?-->
+  				<div class="search"><a class="search-link" href="#"></a></div>
+  				<div class="login"><a class="login-link" href="#">Вход</a></div>
+  				<div class="cart"><a class="cart-link" href="#">Пусто</a></div>
   			</div>
-  			<div class="schedule-navigation">С 10 до 20, ежедневно</div>
-  			<div class="phone-navigation">8 812 450-25-25</div>
-  			<!-- два последних дива никак в навигации не учавствуют, если я их вынесу за нав, как потом центрировать?  -->
+        <section class="info">
+          <div class="info-working-hours">С 10 до 20, ежедневно</div>
+          <div class="info-phone">8 812 450-25-25</div>
+        </section>
   		</nav>
   	</header>
 
   	<main class="container">
   		<h1 class="visually-hidden">Магазин «Глейси»</h1>
   		<section class="carousel">
-  			<h2 class="visually-hidden">Слайдер</h2>
-  			<!-- Правильно ли задавать такой заголовок, или лучше написать «Акции» например -->
+  			<h2 class="visually-hidden">Акции</h2>
   			<ul class="carousel-content">
   				<li class="carousel-content-item">
-  					<img src="http://placehold.it/647x584" alt="Крем-брюле и пломбир с малиновым джемом">
-  					<div>Крем-брюле и пломбир с малиновым джемом</div>
-  					<!-- Эту подпись чем лучше обернуть div, h3/h2 или p? -->
-  					<a href="#">Давайте оба!</a>
+            <div class="carousel-banner">
+              <img src="http://placehold.it/647x584" alt="Крем-брюле и пломбир с малиновым джемом">
+              <p class="carousel-title">Крем-брюле и пломбир с малиновым джемом</div>
+              <button class="carousel-button" href="#">Давайте оба!</button>
+            </div>
   				</li>
   				<li class="carousel-content-item">
-  					<img src="http://placehold.it/644x582" alt="Шоколадный пломбир и лимонный сорбет">
-  					<div>Шоколадный пломбир и лимонный сорбет</div>
-  					<a href="#">Давайте оба!</a>
+            <div class="carousel-banner">
+              <img src="http://placehold.it/644x582" alt="Шоколадный пломбир и лимонный сорбет">
+              <p class="carousel-title">Шоколадный пломбир и лимонный сорбет</div>
+              <button class="carousel-button" href="#">Давайте оба!</button>
+            </div>
   				</li>
   				<li class="carousel-content-item">
-  					<img src="http://placehold.it/639x582" alt="Пломбир с помадкой и клубничный щербет">
-  					<div>Пломбир с помадкой и клубничный щербет</div>
-  					<a href="#">Давайте оба!</a>
+            <div class="carousel-banner">
+              <img src="http://placehold.it/639x582" alt="Пломбир с помадкой и клубничный щербет">
+              <p class="carousel-title">Пломбир с помадкой и клубничный щербет</div>
+              <button class="carousel-button" href="#">Давайте оба!</button>
+            </div>
   				</li>
   			</ul>
   			<ul class="carousel-pagination">
@@ -58,124 +60,132 @@
   				<li class="carousel-pagination-item"></li>
   				<li class="carousel-pagination-item"></li>
   			</ul>
-		</section>
+      </section>
 
-		<section class="banners">
-			<h2 class="visually-hidden">Баннеры</h3>
-			<ul class="banners-content">
-				<li class="banners-content-item">
-					<h3>Малинка даром!</h3>
-					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a href="#">Хочу варенье!</a>
-				</li>
-				<li class="banners-content-item">
-					<h3>Шоколадки даром!</h3>
-					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a href="#">Хочу шоколадки!</a>
-				</li>
-				<!-- вместо ul>li лучше использовать div>article? -->
-			</ul>
-		</section>
+      <section class="banners">
+        <h2 class="visually-hidden">Баннеры</h3>
+        <ul class="banners-content">
+          <li class="banners-content-item">
+            <h3>Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a href="#">Хочу варенье!</a>
+          </li>
+          <li class="banners-content-item">
+            <h3>Шоколадки даром!</h3>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a href="#">Хочу шоколадки!</a>
+          </li>
+        </ul>
+      </section>
 
-		<section class="hits">
-			<h2 class="visually-hidden">Хиты продажи</h2>
-			<ul class="product-list">
-				<li class="product-item">
-					<a href="#">
-						<div class="flag"></div>
-						<img src="http://placehold.it/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-						<div class="price">310 ₽<span>/ кг</span></div>
-						<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-					</a>
-				</li>
-				<li class="product-item">
-					<a href="#">
-						<div class="flag"></div>
-						<img src="http://placehold.it/267x267" alt="Сливочно-кофейное с кусочками шоколада">
-						<div class="price"><span>380 ₽</span>/ кг</div>
-						<p>Сливочно-кофейное с кусочками шоколада</p>
-					</a>
-				</li>
-				<li class="product-item">
-					<a href="#">
-						<div class="flag"></div>
-						<img src="http://placehold.it/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-						<div class="price"><span>355 ₽</span>/ кг</div>
-						<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-					</a>
-				</li>
-				<li class="product-item">
-					<a href="#">
-						<div class="flag"></div>
-						<img src="http://placehold.it/267x267" alt="Сливочное крем-брюле с карамельной подливкой">
-						<div class="price"><span>415 ₽</span>/ кг</div>
-						<p>Сливочное крем-брюле с карамельной подливкой</p>
-						<!-- что лучше p или h3/h4? -->
-					</a>
-				</li>
-			</ul>
-		</section>
-		<section class="features">
-			<h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-			<ul class="features-list">
-				<li class="feature-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-				<li class="feature-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-				<li class="feature-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-				<li class="feature-item">Доставка нашего морожен ого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-			</ul>
-		</section>
-		<section class="news">
-			<article class="blog-news">
-				<h3>Новое в нашем блоге</h3>
-				<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-			</article>
-			<section class="dispatch-news">
-				<h3 class="visually-hidden">Подписка</h3>
-				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-				<form action="#">
-					<input type="text" name="email" placeholder="Электронная почта">
-					<input type="submit" value="Отправить">
-				</form>
-			</section>
-		</section>
-		<section class="contacts">
-			<div class="map">
-				<img src="http://placehold.it/1250x430" alt="Адрес">
-			</div>
-			<section class="contacts-info">
-				<p>Адрес главного офиса и офлайн-магазина:</p>
-				<p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-				<p>Для заказов по телефону:</p>
-				<p class="phone">8 812 450-25-25</p>
-				<p>(с 10 до 20 ежедневно)</p>
-				<a href="#">Форма обратной связи</a>
-			</section>
-		</section>
+      <section class="hits">
+        <h2 class="visually-hidden">Хиты продажи</h2>
+        <ul class="product-list">
+          <li class="product-item">
+            <a href="#">
+              <div class="flag"></div>
+              <img src="http://placehold.it/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <div class="price">310 ₽<span>/ кг</span></div>
+              <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            </a>
+          </li>
+          <li class="product-item">
+            <a href="#">
+              <div class="flag"></div>
+              <img src="http://placehold.it/267x267" alt="Сливочно-кофейное с кусочками шоколада">
+              <div class="price"><span>380 ₽</span>/ кг</div>
+              <p>Сливочно-кофейное с кусочками шоколада</p>
+            </a>
+          </li>
+          <li class="product-item">
+            <a href="#">
+              <div class="flag"></div>
+              <img src="http://placehold.it/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <div class="price"><span>355 ₽</span>/ кг</div>
+              <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+            </a>
+          </li>
+          <li class="product-item">
+            <a href="#">
+              <div class="flag"></div>
+              <img src="http://placehold.it/267x267" alt="Сливочное крем-брюле с карамельной подливкой">
+              <div class="price"><span>415 ₽</span>/ кг</div>
+              <p>Сливочное крем-брюле с карамельной подливкой</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="features">
+        <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <ul class="features-list">
+          <li class="features-item">
+            <p class="features-content">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          </li>
+          <li class="features-item">
+            <p class="features-content">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li class="features-item">
+            <p class="features-content">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </li>
+          <li class="features-item">
+            <p class="features-content">Доставка нашего морожен ого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="news">
+        <article class="blog-news">
+          <h3 class="news-title">Новое в нашем блоге</h3>
+          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </article>
+        <section class="dispatch-news">
+          <h3 class="visually-hidden">Подписка</h3>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <form action="#">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input type="submit" value="Отправить">
+          </form>
+        </section>
+		  </section>
+      <section class="contacts">
+        <div class="map">
+          <img src="http://placehold.it/1250x430" alt="Адрес">
+        </div>
+        <section class="contacts-info">
+          <p>Адрес главного офиса и офлайн-магазина:</p>
+          <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p>Для заказов по телефону:</p>
+          <p class="phone">8 812 450-25-25</p>
+          <p>(с 10 до 20 ежедневно)</p>
+          <a href="#">Форма обратной связи</a>
+        </section>
+      </section>
   	</main>
 
-  	<footer class="main-footer">
-  		<nav class="footer-navigation">
-	  		<ul class="footer-social">
-	  			<li class="social-button"><a href="#">Твиттер</a></li>
-	  			<li class="social-button"><a href="#">Инстаграм</a></li>
-	  			<li class="social-button"><a href="#">Фейсбук</a></li>
-	  			<li class="social-button"><a href="#">Вконтакте</a></li>
-	  		</ul>
-	  		<div class="copyright">
-	  			<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-	  				<img src="http://placehold.it/108x39" width="108" height="39" alt="Логотип «HTML Academy»">
-	  			</a>
-	  			<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
-	  		</div>
-	  		<ul class="footer-site-navigation">
-	  			<li class="special"><a href="#">Для поставщиков</a></li>
-	  			<li><a href="#">Наши документы</a></li>
-	  			<li><a href="#">О производстве</a></li>
-	  			<li><a href="#">Экологические стандарты</a></li>
-	  		</ul>
-  		</nav>
-  	</footer>
-    <!-- модальные окна -->
+    <footer class="main-footer">
+      <div class="footer-navigation">
+        <ul class="footer-social">
+          <li class="social-button"><a href="#">Твиттер</a></li>
+          <li class="social-button"><a href="#">Инстаграм</a></li>
+          <li class="social-button"><a href="#">Фейсбук</a></li>
+          <li class="social-button"><a href="#">Вконтакте</a></li>
+        </ul>
+        <ul class="footer-site-navigation">
+          <li class="footer-site-item special"><a href="#">Для поставщиков</a></li>
+          <li class="footer-site-item"><a href="#">Наши документы</a></li>
+          <li class="footer-site-item"><a href="#">О производстве</a></li>
+          <li class="footer-site-item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+        <div class="copyright">
+          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="http://placehold.it/108x39" width="108" height="39" alt="Логотип «HTML Academy»">
+          </a>
+          <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+        </div>
+      </div>
+    </footer>
+
   	<section class="modal modal-catalog">
   		<ul class="catalog-menu">
   			<li class="catalog-menu-item special-item"><a href="#">Новинки</a></li>
@@ -189,26 +199,26 @@
   	<section class="modal modal-entrance">
   		<form action="#">
   			<input type="text" name="email" placeholder="Электронная почта">
-  			<input type="text" name="password"	placeholder="Пароль">
+  			<input type="text" name="password" placeholder="Пароль">
   			<input type="submit" value="Войти">
   			<a href="#">Забыли пароль?</a>
   			<a href="#">Новая регистрация</a>
   		</form>
   	</section>
 
-	<section class="modal modal-search">
-		<form action="#">
-			<input type="text" placeholder="Что ищем?">
-		</form>
-	</section>
+    <section class="modal modal-search">
+      <form action="#">
+        <input type="text" placeholder="Что ищем?">
+      </form>
+    </section>
 
-	<section class="modal modal-feedback">
-		<h3>Мы обязательно вам ответим!</h3>
-		<input type="text" name="name" placeholder="Как вас зовут?">
-		<input type="text" name="email" placeholder="Ваша почта для ответа?">
-		<textarea name="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-		<input type="submit" value="Отправить">
-		<button class="modal-close">X</button>
-	</section>
+    <section class="modal modal-feedback">
+      <h3>Мы обязательно вам ответим!</h3>
+      <input type="text" name="name" placeholder="Как вас зовут?">
+      <input type="text" name="email" placeholder="Ваша почта для ответа?">
+      <textarea name="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <input type="submit" value="Отправить">
+      <button class="modal-close">X</button>
+    </section>
   </body>
 </html>
